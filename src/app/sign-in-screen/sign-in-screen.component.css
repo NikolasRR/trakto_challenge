@@ -1,0 +1,68 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFF2F9;
+  font-family: 'Roboto';
+}
+
+.logo {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.logo-name {
+  width: 120px;
+  height: 30px;
+}
+
+.logo-dot {
+  height: 8.76px;
+  width: 8.77px;
+  position: absolute;
+  left: 115px;
+  top: 19px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  color: #04183E;
+}
+
+.form>h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 24px 0;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  color: #0095FF;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.input {
+  height: 48px;
+  border: 1px solid #66AFFF;
+  border-radius: 4px;
+  margin-top: 4px;
+  padding-left: 16px;
+  font-size: 14px;
+}
+
+.button {
+  background-color: #1DC763;
+  color: white;
+  height: 48px;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
