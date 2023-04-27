@@ -60,9 +60,22 @@
   background-color: #1DC763;
   color: white;
   height: 48px;
+  width: 300px;
   border-radius: 4px;
   font-family: 'Roboto';
   font-size: 14px;
   font-weight: 500;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button>p {
+  margin-left: 7.31px;
+}
+
+:host ::ng-deep .custom-spinner circle{   
+  stroke: white;
 }

@@ -5,14 +5,20 @@
       <img class="logo-dot" src="./../../assets/SignInLogoDot.svg" />
     </div>
     <h4>Olá, faça login em sua conta</h4>
-    <label class="label">
-      E-mail
-      <input class="input" />
-    </label>
-    <label class="label">
-      Senha
-      <input class="input" />
-    </label>
-    <button class="button">Entrar</button>
+    <form>
+      <label class="label">
+        E-mail
+        <input class="input" type="email" (keyup)="updateEmail($event)" required />
+      </label>
+      <label class="label">
+        Senha
+        <input class="input" type="password" (keyup)="updatePassword($event)" required/>
+      </label>
+      <button (click)="handleSubmit($event)" class="button">
+        <mat-spinner *ngIf="loading" diameter="15" class="custom-spinner"></mat-spinner>
+        <p *ngIf="!loading">Entrar</p>
+        <p *ngIf="loading">Entrando...</p>
+      </button>
+    </form>
   </div>
 </main>
